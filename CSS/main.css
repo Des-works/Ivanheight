@@ -8,6 +8,7 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
     scroll-behavior: smooth;
+    background: red!important;
 }
 :root{
     --main-color: rgba(244, 4, 4, 0.47)
