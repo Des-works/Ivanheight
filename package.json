@@ -11,5 +11,8 @@
     "dad"
   ],
   "author": "destiny edet",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "lightgallery": "^2.5.0"
+  }
 }
