@@ -120,17 +120,14 @@ header.active #bar{
         right: -100%;
     }
 }
-.about-us,.contact-us,.our-products{
-    background-image: linear-gradient(rgba(0,0,0,.5),rgba(71, 42, 42, 0.5));
-}
 .about-us{
-    background-image: url("../img/home-view/hero/88.jpeg");
+    background-image:linear-gradient(rgba(0,0,0,.5),rgba(71, 42, 42, 0.5)), url("../img/home-view/hero/88.jpeg");
 }
 .contact-us{
-    background-image: url("../img/home-view/hero/83.jpeg");
+    background-image: linear-gradient(rgba(0,0,0,.5),rgba(71, 42, 42, 0.5)),url("../img/home-view/hero/83.jpeg");
 }
 .our-products{
-    background-image: url("../img/home-view/hero/83.jpeg");
+    background-image: linear-gradient(rgba(0,0,0,.5),rgba(71, 42, 42, 0.5)),url("../img/home-view/hero/83.jpeg");
 }
 .big-bg{
     background-position: center;
@@ -275,11 +272,6 @@ header.active #bar{
     text-align: center;
     flex-wrap: wrap;
     grid-row-gap: 20px;
-}
-.collect-flex img{
-    /* display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    width: 80% */
 }
 .collect-flex .link{
     margin-top: 20px;
