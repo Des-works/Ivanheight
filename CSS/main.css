@@ -685,6 +685,13 @@ header.active #bar{
     .big-product .product-title hr{
         width: 100px;
     }
+    .big-collection .collect-flex{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .big-collection .collect-flex img{
+        width: 100%;
+    }
 }
 
 .big-furn{
