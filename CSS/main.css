@@ -121,7 +121,16 @@ header.active #bar{
     }
 }
 .about-us,.contact-us,.our-products{
-    background-image: linear-gradient(rgba(0,0,0,.5),rgba(71, 42, 42, 0.5)), url("../pic/bg_image.png");
+    background-image: linear-gradient(rgba(0,0,0,.5),rgba(71, 42, 42, 0.5));
+}
+.about-us{
+    background-image: url("../img/home-view/hero/80.jpeg");
+}
+.contact-us{
+    background-image: url("../img/home-view/hero/83.jpeg");
+}
+.our-products{
+    background-image: url("../img/home-view/hero/83.jpeg");
 }
 .big-bg{
     background-position: center;
