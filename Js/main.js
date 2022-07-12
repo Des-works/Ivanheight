@@ -81,3 +81,42 @@ function toTop(){
 
 }
 toTop();
+const nameEl = document.querySelector("#name");
+const emailEl = document.querySelector("#email");
+const companyNameEl = document.querySelector("#company_name");
+const messageEl = document.querySelector("#message");
+
+const form = document.querySelector("#submit-form");
+
+function checkValidations() {
+     // listen to the form submission
+     
+     document.getElementById("submit-form")
+     document.addEventListener("submit", function (event) {
+       event.preventDefault();
+
+       const serviceID = "service_x23sshh";
+       const templateID = "template_deqvs6x";
+
+       // send the email here
+       emailjs.sendForm(serviceID, templateID, this).then(
+         (response) => {
+           console.log("SUCCESS!", response.status, response.text);
+           alert("SUCCESS!");
+         },
+         (error) => {
+           console.log("FAILED...", error);
+           alert("FAILED...", error);
+         }
+       );
+     })
+}
+
+function reset() {
+  nameEl = "";
+  emailEl = "";
+  companyNameEl = "";
+  messageEl = "";
+  document.querySelector(".name-error").innerText = "";
+}
+

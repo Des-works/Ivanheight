@@ -11,5 +11,9 @@
     "dad"
   ],
   "author": "destiny edet",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "@emailjs/browser": "^3.6.2",
+    "aos": "^3.0.0-beta.6"
+  }
 }

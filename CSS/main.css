@@ -759,6 +759,56 @@ header.active #bar{
     font-size: 14px;
 }
 
+/* about page */
+.gird-wrapper .li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.gird-wrapper img{
+    height: 100%;
+    max-width: 100%;
+    vertical-align: middle;
+    width: 100%;
+    display: inline-block;
+    object-fit: cover;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    transition: 1s ease-in;
+    -webkit-transition: 1s ease-in;
+    -moz-transition: 1s ease-in;
+    -ms-transition: 1s ease-in;
+    -o-transition: 1s ease-in;
+}
+.gird-wrapper img:hover{
+    filter: grayscale(60%);
+    -webkit-filter: grayscale(60%);
+}
+.gird-wrapper .link{
+    height: 100%;
+    width: 100%;
+}
+.gird-wrapper {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 2fr));
+    grid-auto-rows: 200px;
+    grid-auto-flow: dense;
+    padding: 4rem;
+}
+.gird-wrapper .wide{
+    grid-column: span 2;
+}
+.gird-wrapper .tall{
+    grid-row: span 2;
+}
+.gird-wrapper .big{
+    grid-column: span 2;
+    grid-row: span 2;
+}
 /* media  */
 
 @media(max-width: 991px){
@@ -870,164 +920,164 @@ header.active #bar{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+div.form {
+  background-color: rgb(255, 255, 255);
+}
+.contact-wrapper {
+  margin: auto 0;
+}
+
+.submit-btn {
+  float: left;
+}
+.reset-btn {
+  float: right;
+}
+.form input,
+.full-width  textarea{
+  border-bottom: 2px solid rgba(244, 4, 4, 0.47);
+}
+.form-headline:after {
+  content: "";
+  display: block;
+  width: 10%;
+  padding-top: 10px;
+  border-bottom: 3px solid #ec1c24;
+}
+
+.highlight-text {
+  color: #ec1c24;
+}
+
+.hightlight-contact-info {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 1.5;
+}
+
+.highlight-text-grey {
+  font-weight: 500;
+}
+
+.email-info {
+    margin-top: 20px;
+}
+textarea{
+  resize: none;
+}
+::-webkit-input-placeholder { /* Chrome */
+  font-family: 'Roboto', sans-serif;
+}
+
+.required-input {
+  color: black;
+}
+@media (min-width: 600px) {
+  .contain {
+      display: contents;
+      padding: 0;
   }
   
-  div.form {
-    background-color: rgb(255, 255, 255);
+}
+@media (max-width: 600px) {
+  .contain {
+      display: contents;
+      margin: 20px 0;
   }
-  .contact-wrapper {
-    margin: auto 0;
+  .ix,.x{
+      display: none;
   }
-  
-  .submit-btn {
-    float: left;
-  }
-  .reset-btn {
-    float: right;
-  }
-  .form input,
-  .full-width  textarea{
-    border-bottom: 2px solid rgba(244, 4, 4, 0.47);
-  }
-  .form-headline:after {
-    content: "";
-    display: block;
-    width: 10%;
-    padding-top: 10px;
-    border-bottom: 3px solid #ec1c24;
-  }
-  
-  .highlight-text {
-    color: #ec1c24;
-  }
-  
-  .hightlight-contact-info {
-    font-weight: 700;
-    font-size: 22px;
-    line-height: 1.5;
-  }
-  
-  .highlight-text-grey {
-    font-weight: 500;
-  }
-  
-  .email-info {
-      margin-top: 20px;
-  }
-  textarea{
-    resize: none;
-  }
-  ::-webkit-input-placeholder { /* Chrome */
-    font-family: 'Roboto', sans-serif;
-  }
-  
-  .required-input {
-    color: black;
-  }
-  @media (min-width: 600px) {
-    .contain {
-        display: contents;
-        padding: 0;
-    }
-    
-  }
-  @media (max-width: 600px) {
-    .contain {
-        display: contents;
-        margin: 20px 0;
-    }
-    .ix,.x{
-        display: none;
-    }
-  }
-  
-  h3,
-  ul {
-    margin: 0;
-  }
-  
-  h3 {
-    margin-bottom: 1rem;
-  }
-  
-  .form-input:focus,
-  textarea:focus{
-    outline: 1.5px solid #ec1c24;
-  }
-  
-  .form-input,
-  textarea {
-    width: 100%;
-    border: 1px solid #bdbdbd;
-    border-radius: 5px;
-  }
-  
-  .wrapper > * {
-    padding: 1em;
-  }
-  @media (min-width: 700px) {
-    .wrapper {
-      display: grid;
-      grid-template-columns: 2fr 1fr;
-    }
-    .wrapper > * {
-      padding: 2em 2em;
-    }
-  }
-  
-  ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .contacts {
-    color: #212d31;
-  }
-  
-  .form {
-    background: #fff;
-  }
-  
-  form {
+}
+
+h3,
+ul {
+  margin: 0;
+}
+
+h3 {
+  margin-bottom: 1rem;
+}
+
+.form-input:focus,
+textarea:focus{
+  outline: 1.5px solid #ec1c24;
+}
+
+.form-input,
+textarea {
+  width: 100%;
+  border: 1px solid #bdbdbd;
+  border-radius: 5px;
+}
+
+.wrapper > * {
+  padding: 1em;
+}
+@media (min-width: 700px) {
+  .wrapper {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 20px;
+    grid-template-columns: 2fr 1fr;
   }
-  form label {
-    display: block;
+  .wrapper > * {
+    padding: 2em 2em;
   }
-  form p {
-    margin: 0;
-  }
-  
-  .full-width {
-    grid-column: 1 / 3;
-  }
-  
-  button,
-  .submit-btn,
-  .form-input,
-  textarea {
-    padding: 1em;
-  }
-  
-  button, .submit-btn {
-    background: transparent;
-    border: 1px solid #ec1c24;
-    color: #ec1c24;
-    border-radius: 15px;
-    padding: 5px 20px;
-    text-transform: uppercase;
-  }
-  button:hover, .submit-btn:hover,
-  button:focus , .submit-btn:focus{
-    background: #ec1c24;
-    outline: 0;
-    color: #eee;
-  }
-  .error {
-    color: #ec1c24;
-  }
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.contacts {
+  color: #212d31;
+}
+
+.form {
+  background: #fff;
+}
+
+form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
+form label {
+  display: block;
+}
+form p {
+  margin: 0;
+}
+
+.full-width {
+  grid-column: 1 / 3;
+}
+
+button,
+.submit-btn,
+.form-input,
+textarea {
+  padding: 1em;
+}
+
+button, .submit-btn {
+  background: transparent;
+  border: 1px solid #ec1c24;
+  color: #ec1c24;
+  border-radius: 15px;
+  padding: 5px 20px;
+  text-transform: uppercase;
+}
+button:hover, .submit-btn:hover,
+button:focus , .submit-btn:focus{
+  background: #ec1c24;
+  outline: 0;
+  color: #eee;
+}
+.error {
+  color: #ec1c24;
+}
   
 @keyframes video {
     0%{
@@ -1238,6 +1288,9 @@ header.active #bar{
 }
 
 @media(max-width: 576px){
+    .gird-wrapper{
+        padding:1rem;
+    }
     .bg-footer .footer-flex .footer1{
         width: 100%;
     }

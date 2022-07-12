@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IVANHIEGHT</title>
+      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="shortcut icon" href="logo/Rectangle 1.svg" type="image/x-icon">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -16,7 +17,7 @@
     <!-- start header -->
     
     <header id="header">
-        <div class="logo">
+        <div class="logo"  data-aos="fade-right">
             <a href="#"><img id="lol" src="logo/logo.png" alt=""></a>
         </div>
         <ul class="navigation">
@@ -26,7 +27,8 @@
             <li><a href="about">About Us</a></li>
             <li><a href="contact.html">contact</a></li>
         </ul>
-        <div class="bars">
+        <div class="bars"
+        data-aos="fade-left">
             <i id="bar" class="fa fa-bars"></i>
         </div>
     </header>
@@ -37,7 +39,7 @@
         
         <video src="img/home-view/intro.mp4" autoplay muted loop> </video>
             <div class="overLay"></div>
-            <div class="bg-content">
+            <div class="bg-content" data-aos="flip-up">
                 <h1>Quality is the best thing <br> in the business</h1>
                 <hr>
                 <p>
@@ -97,7 +99,7 @@
                     <img src="pic/chair2.jpg" alt="">
                 </div>
                 <div class="link">
-                    <a href="#">Kitchen</a>
+                    <a href="our-products.html" >Kitchen</a>
                 </div>
             </div>
         </div>
@@ -113,7 +115,7 @@
     <div class="big-shop" id="shop">
         <div class="shop-title">
             <h2>
-                we are very proud to present you <br> our furniture
+                We are very proud to present you <br> our furniture
             </h2>
             <p>
                 Quality is the easiest way to make beautiful products.
@@ -156,6 +158,7 @@
             <div class="shop-one">
 
                 <div class="image-one">
+                    <!-- resize -->
                     <img src="img/home-view/23.jpeg" alt="">
                     <div class="overlay">
                         <div class="txt">
@@ -210,7 +213,7 @@
 
     <!-- start section our-product -->
     <div class="big-furn" id="new-arrival">
-        <div class="furn-title">
+        <div class="furn-title" >
             <h2>
                 Discover our furniture from our <br> resources 
             </h2>
@@ -344,7 +347,15 @@
 
     <!-- start scroll to top  -->
     
-
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 200,
+        delay: 50,
+        duration: 1000,
+      });
+     
+    </script>
     <div class="top">
         <i class="fas fa-chevron-up"></i>
     </div>

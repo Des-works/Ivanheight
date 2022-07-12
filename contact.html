@@ -70,7 +70,7 @@
                 <small></small>
               </p>
               <p class="full-width">
-                <input type="submit" class="submit-btn" value="Submit" onclick="checkValidations()">
+                <button type="submit" class="submit-btn" value="Submit">Submit</button>
                 <button class="reset-btn" onclick="reset()">Clear</button>
               </p>
             </form>
@@ -79,7 +79,13 @@
           <div class="contacts contact-wrapper">
             <ul>
               <span class="hightlight-contact-info">
-                <li class="email-info"><i class="fa fa-envelope" aria-hidden="true"></i> info@demo.com</li>
+                <li class="email-info"><i class="fa fa-phone" aria-hidden="true"></i> +234 812 545 4517</li>
+              </span>
+              <span class="hightlight-contact-info">
+                <li class="email-info"><i class="fa fa-envelope" aria-hidden="true"></i> ivanheight77@yahoo.com</li>
+              </span>
+              <span class="hightlight-contact-info">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3940.2118450132493!2d7.437755200000001!3d9.0444312!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104e74b4ce9b7cb5%3A0xd4d6ee1284204b0f!2s16%20King%20A%20J%20Turner%20Cres%2C%20Wuye%20900108%2C%20Abuja!5e0!3m2!1sen!2sng!4v1657590249309!5m2!1sen!2sng" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
               </span>
             </ul>
           </div>
@@ -177,7 +183,17 @@
 
     <!-- end scroll to top  -->
 
+    <script
+    type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"
+  ></script>
 
+  <script type="text/javascript"> 
+       (function () {
+      emailjs.init("9yzv8DxfCcDyGkIHp");
+    })();
+    emailjs.sendForm("505Hvm4LkU9Th4s1UvDtN", "template_deqvs6x", "#submit-form");
+  </script>
 
 
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
