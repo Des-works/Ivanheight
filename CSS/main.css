@@ -124,7 +124,7 @@ header.active #bar{
     background-image: linear-gradient(rgba(0,0,0,.5),rgba(71, 42, 42, 0.5));
 }
 .about-us{
-    background-image: url("../img/home-view/hero/80.jpeg");
+    background-image: url("../img/home-view/hero/88.jpeg");
 }
 .contact-us{
     background-image: url("../img/home-view/hero/83.jpeg");
@@ -164,6 +164,7 @@ header.active #bar{
     text-align: center;
     color: #FFF;
     position: absolute;
+    text-shadow: 2px 2px #3b3838;
 
 }
 .big-bg .bg-content h1{

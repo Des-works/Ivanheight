@@ -81,6 +81,14 @@ function toTop(){
 
 }
 toTop();
+
+AOS.init({
+    offset: 200,
+    delay: 50,
+    duration: 1000,
+  });
+
+
 const nameEl = document.querySelector("#name");
 const emailEl = document.querySelector("#email");
 const companyNameEl = document.querySelector("#company_name");
