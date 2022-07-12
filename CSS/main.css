@@ -161,7 +161,7 @@ header.active #bar{
     text-align: center;
     color: #FFF;
     position: absolute;
-    text-shadow: 2px 2px #3b3838;
+    /* text-shadow: 2px 2px #3b3838; */
 
 }
 .big-bg .bg-content h1{
