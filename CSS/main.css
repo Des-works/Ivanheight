@@ -375,12 +375,12 @@ header.active #bar{
     }
 }
 
-@media(max-width: 1230px){
+/* @media(max-width: 1230px){
     .big-collection .collect-flex{
         display: flex;
         justify-content: center;
     }
-}
+} */
 @media(max-width: 500px){
     .big-collection .collect-flex{
         display: grid;
