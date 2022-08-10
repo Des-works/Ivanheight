@@ -83,10 +83,9 @@ function toTop(){
 toTop();
 
 AOS.init({
-    offset: 200,
     delay: 50,
     duration: 1000,
-  });
+});
 
 
 const nameEl = document.querySelector("#name");

@@ -867,7 +867,6 @@ header.active #bar{
     background-size: cover;
     background-attachment: fixed;
     padding: 300px 0px;
-    margin: 100px 0px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -941,7 +940,7 @@ header.active #bar{
 /* CONTACT US */
 
 .contain {
-    background-color: rgb(253, 9, 9);
+    
     max-width: 1170px;
     margin-left: auto;
     margin-right: auto;
@@ -977,9 +976,7 @@ div.form {
   border-bottom: 3px solid #ec1c24;
 }
 
-.highlight-text {
-  color: #ec1c24;
-}
+
 
 .hightlight-contact-info {
   font-weight: 700;
@@ -987,12 +984,15 @@ div.form {
   line-height: 1.5;
 }
 
+
+
+
 .highlight-text-grey {
   font-weight: 500;
 }
 
 .email-info {
-    margin-top: 20px;
+    margin: 20px 0 ;
 }
 textarea{
   resize: none;
@@ -1016,9 +1016,22 @@ textarea{
       display: contents;
       margin: 20px 0;
   }
+
   .ix,.x{
       display: none;
   }
+  iframe{
+    width: 100%;
+    height: inherit;
+  }
+  .hightlight-contact-info .map{
+    height: 300px;
+  }
+  .hightlight-contact-info .email-info{
+    font-size: 70%;
+    width: 100%;
+  }
+
 }
 
 h3,
@@ -1255,7 +1268,6 @@ button:focus , .submit-btn:focus{
 .bg-footer{
     width: 100%;
     padding: 5%;
-    margin: 10px 0 0 auto;
     background-image: linear-gradient(rgba(223, 211, 211, 0.5),rgba(211, 188, 188, 0.5)) ,url(../pic/lrg.svg) ;
     background-position: center;
     background-size: cover;
