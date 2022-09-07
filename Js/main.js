@@ -1,11 +1,13 @@
 function myHeader(){
     let header = document.getElementById("header");
-    let lol = document.getElementById("lol");
+    let lol = document.getElementById("nav_linkx");
     window.addEventListener("scroll" , function(){
         if(window.scrollY > 0){
             header.classList.add("active");
+            lol.classList.add("glow");
         }else{
             header.classList.remove("active");
+            lol.classList.add("glow");
         }
         
     })

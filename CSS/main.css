@@ -70,12 +70,9 @@ header.active{
     backdrop-filter: blur(9px);
     border-bottom:1px solid rgba(255, 255, 255, 0.5) ;
 }
-header.active .logo a{
-    color:  rgba(244, 4, 4, 0.47);
-}
+
 header.active ul li a{
-   color: #fff;
-    border-color: rgba(244, 4, 4, 0.47);
+   color: rgba(244, 4, 4, 0.781);
 }
 header.active #bar{
     padding: 4px 5px;
